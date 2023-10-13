@@ -14,20 +14,22 @@
         <h2>Nav Bar</h2>
     </nav>
     <main class="main" >
-        <section class="section titulo-etiqueta" style="padding: 40px;"  >
+        <section class="section titulo-etiqueta">
+        
             <h1 class="titulo-crear">Formulario de creacion de EVENTO</h1>
-            <form action="" style="border: 1px solid blue; border-radius: 15px; padding: 20px;">
+            <form action="" class= "first-form" >
+                
                 <div>
                     <div>
                         <table>
                             <tr>
                                 <td >Nombre de evento:</td>
-                                <td><input style="width:500px;" type="text" id="event-name" name = "event-name"><br></td>
+                                <td><input class= "first-field-width"  type="text" id="event-name" name = "event-name"><br></td>
                             </tr>
                             <tr>
                                 <td >Tipo de evento :</td>
                                 <td>
-                                    <select style="width:500px;" name=" optionlist " onChange="combo(this, 'demo')">
+                                    <select class= "first-field-width"  name=" optionlist " onChange="combo(this, 'demo')">
                                         <option>Competencia</option>
                                         <option>Taller</option>
                                         <option>Entrenamiento</option>
@@ -38,7 +40,7 @@
                             </tr>
                         </table>
                     </div>
-                    <div style="display: flex;">
+                    <div class="date-position date-width" >
                         <div>
                             <label for="start" >Fecha inicial de Inscripción:</label><br>
                             <input type="date" id="start" name="trip-start" min="2018-01-01" max="2023-12-31" /><br>
@@ -86,7 +88,8 @@
                             </tr>
                         </table>
                     </div>
-                    <div>
+                    
+                    <!-- <div>
                         <table>
                             <tr>
                                 <td>Premios :</td>
@@ -127,16 +130,16 @@
                     <div>
                         <button>ACEPTAR</button>
                         <button>CANCELAR</button>
-                    </div>
+                    </div> -->
                     
                 </div>
             </form>
 
         </section>
         <aside class="aside" class="titulo-etiqueta">
-            <h3>Imagen del evento</h3>
-            <div style="display:inline ;">
-                <img src="imgh.png" alt="imagen de afiche" style="width:100px;">
+            <h3 style="text-align: center;">Imagen del evento</h3>
+            <div style="display: flex; flex-direction: column; align-items: center;">
+                <img src="imgh.png" alt="imagen de afiche" style="width:280px;">
                 <div>
                     <input hidden id="btnoriginal" class="form-control text-center col-md-6" onChange="document.getElementById('tagsmall').innerText=document.getElementById('btnoriginal').files[0]['name'];" type="file" value="Adjuntar documento">
                     <button id='botonpersonal' onClick="document.getElementById('btnoriginal').click();">Agregar IMAGEN</button>
@@ -157,7 +160,53 @@
                 </div>
             </div>
         </aside>
+        
     </main>
+
+    <div class="another-section titulo-etiqueta">
+        <div style="padding: 40px;">
+            <table>
+                <tr>
+                    <td>Premios :</td>
+                    <td>Reglas:</td>
+                    <td>Detalle:</td>
+                </tr>
+                <tr>
+                    <td><textarea name="premios" rows="8" cols="55"></textarea></td>
+                    <td><textarea name="reglas" rows="8" cols="58"></textarea></td>
+                    <td><textarea name="detalle" rows="8" cols="55"></textarea></td>
+                </tr>
+                <tr>
+                    <td>Afiche</td>
+                    <td>Contenido</td>
+                    <td>Invitados Especiales</td>
+                </tr>
+                <tr>
+                    <td style="border: 0.5px solid slateblue;">
+                        <div style="display: flex; flex-direction: column; align-items: center;">
+                            <img src="imgh.png" alt="imagen de afiche" style="width:150px;">
+                            <div>
+                                <input hidden id="btnoriginal" class="form-control text-center col-md-6" onChange="document.getElementById('tagsmall').innerText=document.getElementById('btnoriginal').files[0]['name'];" type="file" value="Adjuntar documento">
+                                <button id='botonpersonal' onClick="document.getElementById('btnoriginal').click();">Agregar IMAGEN</button>
+                                <small id='tagsmall'></small>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <textarea name="contenidos" rows="10" cols="58"></textarea>
+                    </td>
+                    <td>
+                        <textarea name="invitados-especiales" rows="10" cols="55"></textarea>
+                    </td>
+                </tr>
+                
+            </table>
+        </div>
+    </div>
+    <div>
+        <button>ACEPTAR</button>
+        <button>CANCELAR</button>
+    </div>
     <footer class="footer">
         <h2>footer</h2>
     </footer>
