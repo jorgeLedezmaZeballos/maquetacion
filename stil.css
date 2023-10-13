@@ -14,7 +14,7 @@
 .main{
     background-color: lightcoral;
     width: 100%;
-    height: 580px;
+    height: 600px;
     display: flex;
 }
 .section{
@@ -53,6 +53,35 @@
     font-size: 21px;
 }
 
+.campo-lugar{
+    width: 500px;
+}
+
+.container-dsc{
+    display: flex;
+    height: 165px;
+    justify-content: center;
+    margin:0px;
+}
+
+.box{
+    padding: 10px;
+}
+
+.box textarea p{
+    margin:0;
+}
+
+.box textarea{
+    margin:0;
+}
+
+.campo-hora{
+    width: 250px;
+    font-size: 14px;
+    text-align: center;
+}
+
 .another-section{
     background-color:orange;/*#D1D0BC;*/
     width: 100%;
@@ -89,12 +118,12 @@
     font-family: 'Libre Baskerville', sans-serif;
 }
 input {
-    border-radius: 10px; /* Puedes ajustar el valor según tus preferencias */
+    border-radius: 10px; 
     height: 24px;
     /* width:320px; */
 }
 select {
-    border-radius: 10px; /* Puedes ajustar el valor según tus preferencias */
+    border-radius: 10px; 
     height: 26px;
     font-size: 24px;
 }
