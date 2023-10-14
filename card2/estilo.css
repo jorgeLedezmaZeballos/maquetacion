@@ -1,0 +1,35 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+
+.card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 300px;
+    padding: 10px;
+    margin: 10px;
+    position: relative;
+    text-align: center;
+    background-color: #BDBB96;
+}
+.estilo-nombre-fecha{
+    font-family:'Libre Baskerville', serif;
+    font-size: 24px;
+}
+.close-button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    color: black;
+    font-size: 32px;
+    border: none;
+    background-color:transparent;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    margin: 5px;
+}
+img{
+    width: 250px;
+    border: 1px solid orange;
+}
+
